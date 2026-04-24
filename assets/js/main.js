@@ -3,6 +3,8 @@
 
   const nav = document.querySelector(".nav");
   const toggle = document.querySelector(".nav__toggle");
+  const companyMenu = document.querySelector("[data-company-menu]");
+  const companyToggle = document.querySelector("[data-company-toggle]");
 
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
@@ -24,6 +26,27 @@
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
+  }
+
+  if (companyMenu && companyToggle) {
+    const closeCompanyMenu = () => {
+      companyMenu.classList.remove("is-open");
+      companyToggle.setAttribute("aria-expanded", "false");
+    };
+
+    companyToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const open = companyMenu.classList.toggle("is-open");
+      companyToggle.setAttribute("aria-expanded", String(open));
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!companyMenu.contains(e.target)) closeCompanyMenu();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeCompanyMenu();
+    });
   }
 
   if ("IntersectionObserver" in window) {
