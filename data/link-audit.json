@@ -118,6 +118,14 @@
       "final": "https://connect2print.com/platform/",
       "status": 200,
       "title": "Connect2Print public platform site"
+    },
+    {
+      "url": "https://movemyfiles.com",
+      "final": "https://movemyfiles.com",
+      "status": 200,
+      "title": "MoveMyFiles: send big files, simply",
+      "checked_at": "2026-11-08",
+      "note": "Included as Move Your Files at user request."
     }
   ]
 }

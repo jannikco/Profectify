@@ -221,16 +221,16 @@
     "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
   },
   {
-    "slug": "pazaos",
-    "name": "PazaOS",
-    "category": "ai",
-    "url": "https://pazaos.com",
-    "symbol": "◌",
+    "slug": "movemyfiles",
+    "name": "Move Your Files",
+    "category": "business",
+    "url": "https://movemyfiles.com",
+    "symbol": "↥",
     "description": [
-      "Give an AI teammate a computer and a workspace to get things done.",
-      "Giv en AI-kollega en computer og et arbejdsrum til at løse opgaver."
+      "Send large files and folders with a simple download link.",
+      "Send store filer og mapper med et enkelt downloadlink."
     ],
     "featured": false,
-    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+    "source": "User-confirmed inclusion; current movemyfiles.com website (MoveMyFiles), checked 2026-11-08."
   }
 ]
