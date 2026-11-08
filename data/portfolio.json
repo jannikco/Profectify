@@ -189,10 +189,11 @@
     "symbol": "↗",
     "description": [
       "Practical AI courses, ebooks and learning resources. The current home of AI BootCamp.",
-      "Praktiske AI-kurser, e-bøger og læringsmaterialer. Det nuværende hjem for AI BootCamp."
+      "Praktiske AI-kurser, e-bøger og skabeloner til hverdagen på kontoret. Lær at bruge AI til Word, Excel, PowerPoint og andre arbejdsopgaver."
     ],
     "featured": false,
-    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+    "source": "User-confirmed AIGenvejen.com; aibootcamp_kursus/data/catalog.yaml and src/Views/da/claude-office-kursus.php.",
+    "name_da": "AIGenvejen.com"
   },
   {
     "slug": "ai-board-institute",
