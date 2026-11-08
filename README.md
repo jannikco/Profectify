@@ -1,6 +1,6 @@
 # Profectify — venture studio website
 
-English and Danish static website. **Local review draft: not approved for publication.**
+English and Danish static website. Publication approved by the user on 8 November 2026.
 
 ## Preview
 
@@ -34,4 +34,4 @@ The HeyMadeIt editor image and HeyBrainey mark are copied from the group's produ
 
 Browser screenshots and validation output live under the ignored `output/playwright/` folder. Checks cover all 12 pages, English/Danish, mobile/tablet/desktop overflow, local links/assets, WCAG A/AA automated checks, portfolio search/filter/empty state, mobile-menu Escape and focus, reduced motion and email links. Automated accessibility checks supplement visual and keyboard review; they are not certification.
 
-**Do not push, upload, merge or deploy until the user explicitly approves the preview.** The current live site is GitHub Pages from `main` at the repository root. Once approval is given, publish only the reviewed revision, keep `CNAME` and `.nojekyll`, and verify the live English/Danish routes and asset loading. The previous deployed commit is the rollback point. Keep ignored review notes and browser artifacts out of the upload.
+For future changes, obtain explicit user approval of the preview before publication. The initial redesign was approved for publication on 8 November 2026. The current live site is GitHub Pages from `main` at the repository root. Once approval is given, publish only the reviewed revision, keep `CNAME` and `.nojekyll`, and verify the live English/Danish routes and asset loading. The previous deployed commit is the rollback point. Keep ignored review notes and browser artifacts out of the upload.
