@@ -1,0 +1,123 @@
+{
+  "checked_at": "2026-11-08T13:41:15.147155+00:00",
+  "results": [
+    {
+      "url": "https://heymadeit.com/en",
+      "final": "https://heymadeit.com/en",
+      "status": 200,
+      "title": "Design for screen and print in your browser | HeyMadeIt"
+    },
+    {
+      "url": "https://depaza.eu",
+      "final": "https://depaza.eu",
+      "status": 200,
+      "title": "Depaza \u2014 EU First AI. Built in Europe. Hosted in Europe. Yours."
+    },
+    {
+      "url": "https://pipmcp.com",
+      "final": "https://pipmcp.com",
+      "status": 200,
+      "title": "Let your AI assistant work in the software you already use \u00b7 PipMCP"
+    },
+    {
+      "url": "https://heybrainey.com",
+      "final": "https://heybrainey.com",
+      "status": 200,
+      "title": "HeyBrainey: your memory, every AI"
+    },
+    {
+      "url": "https://leadadapter.com",
+      "final": "https://leadadapter.com",
+      "status": 200,
+      "title": "LeadAdapter \u2014 Your CRM, LinkedIn and audience insights, together"
+    },
+    {
+      "url": "https://heymadeweb.com",
+      "final": "https://heymadeweb.com",
+      "status": 200,
+      "title": "HeyMadeWeb \u00b7 Your website. Two minutes. Just ask."
+    },
+    {
+      "url": "https://wpadapter.com",
+      "final": "https://wpadapter.com",
+      "status": 200,
+      "title": "WP Adapter \u2014 Fire the WordPress agency. Keep publish."
+    },
+    {
+      "url": "https://pdfmodule.com",
+      "final": "https://pdfmodule.com",
+      "status": 200,
+      "title": "PDFModule \u2014 Print API Enterprise from \u20ac1,000/mo"
+    },
+    {
+      "url": "https://schoolbrowse.com",
+      "final": "https://schoolbrowse.com",
+      "status": 200,
+      "title": "Honest School Reviews from Parents | Compare 395,000+ Schools in 42 Countries | SchoolBrowse"
+    },
+    {
+      "url": "https://teachsignal.com",
+      "final": "https://teachsignal.com",
+      "status": 200,
+      "title": "TeachSignal Intelligence \u2014 Stop Losing Your Best Teachers \u2013 Intelligence and School Operations for Modern Schools"
+    },
+    {
+      "url": "https://theteacherjob.com",
+      "final": "https://theteacherjob.com",
+      "status": 200,
+      "title": "TheTeacherJob \u2014 International Teaching Jobs"
+    },
+    {
+      "url": "https://enrolrise.com",
+      "final": "https://enrolrise.com",
+      "status": 200,
+      "title": "EnrolRise Institute | Increase Enrolment Demand for Schools"
+    },
+    {
+      "url": "https://literacygrow.com",
+      "final": "https://literacygrow.com",
+      "status": 200,
+      "title": "Science-Based Reading for Children \u2014 LiteracyGrow"
+    },
+    {
+      "url": "https://counteroo.com",
+      "final": "https://counteroo.com",
+      "status": 200,
+      "title": "Counteroo \u2014 maths that makes sense"
+    },
+    {
+      "url": "https://aibootcamphq.com",
+      "final": "https://aigenvejen.com/",
+      "status": 200,
+      "title": "Claude i Office \u2014 skriv rapporten, regnearket og pr\u00e6sentationen p\u00e5 minutter | AI Genvejen"
+    },
+    {
+      "url": "https://aigenvejen.com",
+      "final": "https://aigenvejen.com",
+      "status": 200,
+      "title": "Claude i Office \u2014 skriv rapporten, regnearket og pr\u00e6sentationen p\u00e5 minutter | AI Genvejen"
+    },
+    {
+      "url": "https://aiboardinstitute.com",
+      "final": "https://aiboardinstitute.com",
+      "status": 200,
+      "title": "Bestyrelse og direktion skal kunne udfordre AI-planen."
+    },
+    {
+      "url": "https://shop.connect2print.com",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://pazaos.com",
+      "final": "https://pazaos.com",
+      "status": 200,
+      "title": "PazaOS \u2014 Give a teammate a computer"
+    },
+    {
+      "url": "https://connect2print.com",
+      "final": "https://connect2print.com/platform/",
+      "status": 200,
+      "title": "Connect2Print public platform site"
+    }
+  ]
+}

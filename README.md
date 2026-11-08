@@ -1,34 +1,37 @@
-# Profectify — Group website
+# Profectify — venture studio website
 
-Static HTML site for [profectify.com](https://profectify.com/). No build step; every file is served as-is.
+English and Danish static website. **Local review draft: not approved for publication.**
 
-## Structure
+## Preview
 
-```
-index.html        Home
-services.html     Consulting (HR · Business · Rent-a-CTO)
-work.html         Portfolio — all 9 brands
-about.html        Group story
-contact.html      Contact form (mailto)
-404.html          Branded 404
-assets/css/       Stylesheet
-assets/js/        Nav toggle + reveals
+```sh
+python3 scripts/build.py
+python3 -m http.server 8462 --bind 127.0.0.1
 ```
 
-## Editing
+Open http://127.0.0.1:8462/ (English) or http://127.0.0.1:8462/da/ (Danish).
 
-- Brand copy lives inline in `work.html` and `index.html`.
-- Consulting copy lives in `services.html` and a shorter teaser in `index.html`.
-- Pillar colors are CSS variables in `assets/css/style.css` (`--edu`, `--kids`, `--ai`, `--saas`). Changing one updates every matching card and footer column.
+## Edit and build
 
-## Deploying to GitHub Pages
+- `scripts/build.py`: shared page templates, navigation and English/Danish copy.
+- `data/portfolio.json`: the shared product catalogue, descriptions, links and featured flags.
+- `assets/css/style.css` and `assets/js/main.js`: responsive styling, menu and portfolio filters.
+- Run `python3 scripts/build.py` after editing templates or catalogue data. Commit the generated HTML alongside its source. There is no runtime build, JavaScript framework or backend dependency.
+- English pages retain their original `.html` routes. Danish pages live under `/da/`. Root-relative assets assume deployment at the existing custom domain root.
+- `output/PORTFOLIO-REVIEW.md` documents candidates, exclusions, naming and redirects. `data/link-audit.json` records the public destination checks.
 
-1. Push to `main`.
-2. Repo → **Settings → Pages** → Source: *Deploy from a branch* → Branch: `main` / `root`.
-3. To use the custom domain, add `profectify.com` in the Pages settings — GitHub will create a `CNAME` file automatically. Add the DNS records (apex `A` records + `www` `CNAME`) at your registrar.
+## Behaviour
 
-## Notes
+The portfolio has category and text filtering with shareable URL parameters and a live result count. Language switching preserves the current page and portfolio filter state. With JavaScript unavailable, all portfolio cards and regular desktop links remain available. The mobile menu is progressively enhanced; the noscript style exposes navigation.
 
-- `.nojekyll` is included so GitHub Pages serves files untouched (no Jekyll processing).
-- All outbound links to portfolio brands open in a new tab (`rel="noopener"`).
-- The contact form uses `mailto:` — no third-party form handler is wired up.
+Contact links open the visitor's email application. They do not send mail or claim a successful submission. No analytics, cookies, external fonts, paid service or tracking code has been added.
+
+## Assets
+
+The HeyMadeIt editor image and HeyBrainey mark are copied from the group's product repositories. Other product visuals are original HTML/CSS illustrations; they do not claim to be screenshots. Inter fonts are self-hosted, with the SIL Open Font License in `assets/fonts/OFL.txt`.
+
+## Validation and approval
+
+Browser screenshots and validation output live under the ignored `output/playwright/` folder. Checks cover all 12 pages, English/Danish, mobile/tablet/desktop overflow, local links/assets, WCAG A/AA automated checks, portfolio search/filter/empty state, mobile-menu Escape and focus, reduced motion and email links. Automated accessibility checks supplement visual and keyboard review; they are not certification.
+
+**Do not push, upload, merge or deploy until the user explicitly approves the preview.** The current live site is GitHub Pages from `main` at the repository root. Once approval is given, publish only the reviewed revision, keep `CNAME` and `.nojekyll`, and verify the live English/Danish routes and asset loading. The previous deployed commit is the rollback point. Keep ignored review notes and browser artifacts out of the upload.

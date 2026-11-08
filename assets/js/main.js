@@ -1,84 +1,40 @@
-(function () {
-  "use strict";
-
-  const nav = document.querySelector(".nav");
-  const toggle = document.querySelector(".nav__toggle");
-  const companyMenu = document.querySelector("[data-company-menu]");
-  const companyToggle = document.querySelector("[data-company-toggle]");
-
-  if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      const open = nav.classList.toggle("is-open");
-      toggle.setAttribute("aria-expanded", String(open));
+(() => {
+  'use strict';
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('#navigation');
+  function closeMenu() { toggle?.setAttribute('aria-expanded', 'false'); nav?.classList.remove('open'); }
+  toggle?.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    toggle.setAttribute('aria-expanded', String(open)); nav.classList.toggle('open', open);
+  });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape') { const wasOpen = nav?.classList.contains('open'); closeMenu(); if (wasOpen) toggle.focus(); } });
+  document.addEventListener('click', event => { if (!event.target.closest('.nav')) closeMenu(); });
+  matchMedia('(min-width: 901px)').addEventListener('change', closeMenu);
+  const input = document.querySelector('#venture-search');
+  const cards = [...document.querySelectorAll('.directory-grid .venture-card')];
+  const buttons = [...document.querySelectorAll('[data-filter]')];
+  let category = 'all';
+  function filter() {
+    const query = (input?.value || '').trim().toLocaleLowerCase();
+    let count = 0;
+    cards.forEach(card => {
+      const show = (category === 'all' || card.dataset.category === category) && card.dataset.search.includes(query);
+      card.hidden = !show; if (show) count++;
     });
-
-    nav.querySelectorAll(".nav__mobile a").forEach((a) => {
-      a.addEventListener("click", () => {
-        nav.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
-      });
-    });
+    const output = document.querySelector('[data-result-count]');
+    if (output) output.textContent = `${count} ${count === 1 ? output.dataset.singular : output.dataset.plural}`;
+    const empty = document.querySelector('.no-results'); if (empty) empty.hidden = count !== 0;
+    const url = new URL(location.href); url.searchParams.delete('category'); url.searchParams.delete('q');
+    if (category !== 'all') url.searchParams.set('category', category);
+    if (query) url.searchParams.set('q', input.value.trim());
+    history.replaceState(null, '', url);
+    document.querySelectorAll('.language').forEach(a => { const target = new URL(a.href); target.search = url.search; a.href = target.href; });
   }
-
-  if (nav) {
-    const onScroll = () => {
-      nav.classList.toggle("is-scrolled", window.scrollY > 4);
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-  }
-
-  if (companyMenu && companyToggle) {
-    const closeCompanyMenu = () => {
-      companyMenu.classList.remove("is-open");
-      companyToggle.setAttribute("aria-expanded", "false");
-    };
-
-    companyToggle.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const open = companyMenu.classList.toggle("is-open");
-      companyToggle.setAttribute("aria-expanded", String(open));
-    });
-
-    document.addEventListener("click", (e) => {
-      if (!companyMenu.contains(e.target)) closeCompanyMenu();
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeCompanyMenu();
-    });
-  }
-
-  if ("IntersectionObserver" in window) {
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            io.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
-    );
-    document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
-  } else {
-    document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
-  }
-
-  const form = document.querySelector("[data-contact-form]");
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const data = new FormData(form);
-      const name = (data.get("name") || "").toString().trim();
-      const email = (data.get("email") || "").toString().trim();
-      const message = (data.get("message") || "").toString().trim();
-      const subject = encodeURIComponent(`Website enquiry from ${name || "visitor"}`);
-      const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\n\n${message}`
-      );
-      window.location.href = `mailto:hello@profectify.com?subject=${subject}&body=${body}`;
-    });
+  if (input) {
+    const params = new URLSearchParams(location.search);
+    category = buttons.some(b => b.dataset.filter === params.get('category')) ? params.get('category') : 'all';
+    input.value = params.get('q') || '';
+    buttons.forEach(button => { button.setAttribute('aria-pressed', String(button.dataset.filter === category)); button.addEventListener('click', () => { category = button.dataset.filter; buttons.forEach(b => b.setAttribute('aria-pressed', String(b === button))); filter(); }); });
+    input.addEventListener('input', filter); filter();
   }
 })();

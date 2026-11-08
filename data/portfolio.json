@@ -1,0 +1,236 @@
+[
+  {
+    "slug": "heymadeit",
+    "name": "HeyMadeIt",
+    "category": "creative",
+    "url": "https://heymadeit.com/en",
+    "symbol": "✳",
+    "description": [
+      "Design for screen and print, with templates, brand kits and a collaborative browser editor.",
+      "Design til skærm og tryk med skabeloner, brandkits og en designeditor med samarbejde i browseren."
+    ],
+    "featured": true,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "depaza",
+    "name": "Depaza",
+    "category": "ai",
+    "url": "https://depaza.eu",
+    "symbol": "◈",
+    "description": [
+      "European AI for conversations, research and getting work done.",
+      "Europæisk AI til samtaler, research og praktiske opgaver."
+    ],
+    "featured": true,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "pipmcp",
+    "name": "PipMCP",
+    "category": "ai",
+    "url": "https://pipmcp.com",
+    "symbol": "⌘",
+    "description": [
+      "Connect your AI assistant to the business software you already use.",
+      "Forbind din AI-assistent med de forretningssystemer, du allerede bruger."
+    ],
+    "featured": true,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "heybrainey",
+    "name": "HeyBrainey",
+    "category": "ai",
+    "url": "https://heybrainey.com",
+    "symbol": "✴",
+    "description": [
+      "Save what matters in one AI assistant. Recall it in another. Your memory travels with you.",
+      "Gem det vigtige i én AI-assistent. Find det igen i en anden. Din hukommelse følger med dig."
+    ],
+    "featured": true,
+    "source": "heybrainey repository: resources/views/public/partials/hero.blade.php"
+  },
+  {
+    "slug": "leadadapter",
+    "name": "LeadAdapter",
+    "category": "business",
+    "url": "https://leadadapter.com",
+    "symbol": "↗",
+    "description": [
+      "Turn LinkedIn engagement into conversations, follow-ups and a more connected pipeline.",
+      "Omsæt engagement på LinkedIn til samtaler, opfølgning og en mere sammenhængende salgspipeline."
+    ],
+    "featured": true,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "heymadeweb",
+    "name": "HeyMadeWeb",
+    "category": "creative",
+    "url": "https://heymadeweb.com",
+    "symbol": "▦",
+    "description": [
+      "Create, edit and run a business website, on your own or with your AI assistant.",
+      "Skab, redigér og driv virksomhedens hjemmeside selv eller sammen med din AI-assistent."
+    ],
+    "featured": true,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "wpadapter",
+    "name": "WP Adapter",
+    "category": "ai",
+    "url": "https://wpadapter.com",
+    "symbol": "↔",
+    "description": [
+      "Work on your WordPress site from your AI assistant, with control over publishing.",
+      "Arbejd på din WordPress-side fra din AI-assistent med kontrol over publicering."
+    ],
+    "featured": false,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "pdfmodule",
+    "name": "PDFModule",
+    "category": "creative",
+    "url": "https://pdfmodule.com",
+    "symbol": "▤",
+    "description": [
+      "PDF generation and print production tools for developers, platforms and printers.",
+      "PDF-generering og værktøjer til trykproduktion for udviklere, platforme og trykkerier."
+    ],
+    "featured": false,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "schoolbrowse",
+    "name": "SchoolBrowse",
+    "category": "education",
+    "url": "https://schoolbrowse.com",
+    "symbol": "▧",
+    "description": [
+      "Discover schools, read parent reviews and compare options for your family.",
+      "Find skoler, læs forældreanmeldelser og sammenlign muligheder for din familie."
+    ],
+    "featured": false,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "teachsignal",
+    "name": "TeachSignal",
+    "category": "education",
+    "url": "https://teachsignal.com",
+    "symbol": "≋",
+    "description": [
+      "Help school leaders understand teaching conditions and support their teams.",
+      "Hjælp skoleledere med at forstå undervisningsvilkår og støtte deres teams."
+    ],
+    "featured": false,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "theteacherjob",
+    "name": "TheTeacherJob",
+    "category": "education",
+    "url": "https://theteacherjob.com",
+    "symbol": "↗",
+    "description": [
+      "Connect teachers with international teaching opportunities.",
+      "Forbind lærere med internationale undervisningsjob."
+    ],
+    "featured": false,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "enrolrise",
+    "name": "EnrolRise Institute",
+    "category": "education",
+    "url": "https://enrolrise.com",
+    "symbol": "◒",
+    "description": [
+      "Growth, mentoring and sale readiness for schools and nursery groups.",
+      "Vækst, mentoring og salgsmodning for skoler og daginstitutionsgrupper."
+    ],
+    "featured": false,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "literacygrow",
+    "name": "LiteracyGrow",
+    "category": "education",
+    "url": "https://literacygrow.com",
+    "symbol": "Aa",
+    "description": [
+      "Phonics-based reading practice with lessons and progress tools for families.",
+      "Læsetræning baseret på bogstavlyde med lektioner og overblik over barnets udvikling."
+    ],
+    "featured": false,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "counteroo",
+    "name": "Counteroo",
+    "category": "education",
+    "url": "https://counteroo.com",
+    "symbol": "＋",
+    "description": [
+      "Confidence-building maths practice for young learners.",
+      "Matematiktræning, der styrker yngre børns selvtillid."
+    ],
+    "featured": false,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "aigenvejen",
+    "name": "AI Genvejen",
+    "category": "education",
+    "url": "https://aigenvejen.com",
+    "symbol": "↗",
+    "description": [
+      "Practical AI courses, ebooks and learning resources. The current home of AI BootCamp.",
+      "Praktiske AI-kurser, e-bøger og læringsmaterialer. Det nuværende hjem for AI BootCamp."
+    ],
+    "featured": false,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "ai-board-institute",
+    "name": "AI Board Institute",
+    "category": "education",
+    "url": "https://aiboardinstitute.com",
+    "symbol": "◈",
+    "description": [
+      "AI education, strategy and governance for boards.",
+      "AI-kompetencer, strategi og governance for bestyrelser."
+    ],
+    "featured": false,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "connect2print",
+    "name": "Connect2Print",
+    "category": "business",
+    "url": "https://connect2print.com",
+    "symbol": "▦",
+    "description": [
+      "Tools for web-to-print commerce and print shop workflows.",
+      "Værktøjer til web-to-print-handel og trykkeriets arbejdsgange."
+    ],
+    "featured": false,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  },
+  {
+    "slug": "pazaos",
+    "name": "PazaOS",
+    "category": "ai",
+    "url": "https://pazaos.com",
+    "symbol": "◌",
+    "description": [
+      "Give an AI teammate a computer and a workspace to get things done.",
+      "Giv en AI-kollega en computer og et arbejdsrum til at løse opgaver."
+    ],
+    "featured": false,
+    "source": "Current product repository and Profectify OS registry; existing Group portfolio for legacy brands."
+  }
+]
